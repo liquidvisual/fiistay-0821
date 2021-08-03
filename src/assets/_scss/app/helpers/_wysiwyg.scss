@@ -1,0 +1,168 @@
+/*
+    TEXT-EDITOR.CSS
+
+    - updated: 31.07.19
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+
+$spacer: rem-calc(20) !default;
+$font-family-sans-serif: inherit !default;
+$font-family-serif: inherit !default;
+
+//-----------------------------------------------------------------
+// IMAGES
+//-----------------------------------------------------------------
+
+.wysiwyg img {
+	max-width: 100%;
+}
+
+//-----------------------------------------------------------------
+// IMAGE ALIGNMENT
+//-----------------------------------------------------------------
+
+.img-left {
+	margin-bottom: rem-calc(30);
+
+	@include media-breakpoint-up(md) {
+	    float: left;
+	    margin: rem-calc(30 30 0 0);
+	}
+}
+
+.img-right {
+	margin-bottom: rem-calc(30);
+
+	@include media-breakpoint-up(xxl) {
+	    float: right;
+	    margin: rem-calc(0 0 30 50);
+	}
+}
+
+.img-left img,
+.img-right img {
+	@include media-breakpoint-down(xl) {
+		width: 100%;
+		max-width: 100% !important; // [LOCKED] - handles case where template determines desktop default width
+	}
+}
+
+//-----------------------------------------------------------------
+// FONTS
+//-----------------------------------------------------------------
+
+.font-family-serif {
+	font-family: $font-family-serif;
+}
+
+.font-family-sans-serif {
+	font-family: $font-family-sans-serif;
+}
+
+//-----------------------------------------------------------------
+// WYSIWYG TYPE
+//-----------------------------------------------------------------
+
+.wysiwyg {
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-bottom: rem-calc(10);
+		font-weight: 800;
+		color: $body-color;
+		// @extend .text-dark;
+	}
+
+	h1 { font-size: rem-calc(38); }
+	h2 { font-size: rem-calc(22); }
+	h3 { font-size: rem-calc(17); }
+	h4 { font-size: rem-calc(16); }
+	h5, h6 { font-size: rem-calc(16); }
+
+	// LEAD
+	.lead,
+	p.lead,
+	.lead > p {
+		margin-bottom: rem-calc(20);
+		font-size: rem-calc(18);
+	}
+
+	// contact item one off
+	&.text-white * {
+		color: white !important;
+	}
+}
+
+//-----------------------------------------------------------------
+// WYSIWYG - OTHER
+//-----------------------------------------------------------------
+
+.wysiwyg {
+	line-height: 1.5;
+
+	// BLOCKS
+	p, ul, ol, hr {
+		margin-bottom: rem-calc(20);
+	}
+
+	hr {
+		border-color: rgba(white, 0.2);
+	}
+
+	// LISTS
+	ul, ol {
+		@include media-breakpoint-down(sm) {
+		    padding-left: rem-calc(30);
+		}
+
+		li {
+			margin-bottom: rem-calc(15);
+		}
+	}
+
+	// TABLES
+	table {
+		width: 100% !important;
+		border: none !important;
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+		border-top: 1px solid #e5e5e5 !important;
+
+		td {
+			border: none !important;
+			border-bottom: 1px solid #e5e5e5 !important;
+			padding: 0.8rem;
+		}
+	}
+}
+
+//=========================================
+// special case - if leads are inside WYSIWYG
+//=========================================
+
+p.lead,
+.wysiwyg p.lead {
+	color: $body-color; // repeated
+}
+
+//=========================================
+// PHONE LINK
+//=========================================
+
+.wysiwyg .phone-link {
+	display: inline-flex;
+	align-items: center;
+	font-size: rem-calc(17);
+	font-weight: bold;
+	color: $body-color;
+
+	&:before {
+		content: "\f10b";
+		margin-right: rem-calc(8);
+		font-size: rem-calc(30);
+		font-family: "FontAwesome";
+		line-height: 0;
+	}
+}

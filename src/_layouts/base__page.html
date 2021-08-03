@@ -1,0 +1,33 @@
+---
+layout: base
+---
+
+{% assign bg_image = page.hero_image %}
+{% assign breadcrumb_text = page.breadcrumb_text | default: "Back" %}
+{% assign breadcrumb_url = page.breadcrumb_url %}
+
+<!-- HERO -->
+<div class="hero" style="background-image: url('{{ bg_image }}')">
+    <div class="container animated fadeInLeftSubtle">
+
+        <!-- BREADCRUMB TEXT -->
+        <div class="hero-breadcrumb">
+            <a href="{{ breadcrumb_url }}"><i class="fa fa-angle-left"></i> {{ breadcrumb_text }}</a>
+        </div>
+
+        <!-- HEADING -->
+        {% if page.title_override %}
+            {% unless page.title_override == '' %}
+                <h2 class="hero-title">
+                    {{ page.title_override }}
+                </h2>
+            {% endunless %}
+        {% else %}
+            <h1 class="hero-title">
+                {{ page.title }}
+            </h1>
+        {% endif %}
+    </div>
+</div>
+
+{{ content }}

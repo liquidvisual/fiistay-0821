@@ -1,0 +1,23 @@
+---
+layout: base
+---
+
+{% assign sitemap = site.data.sitemap %} {% assign bg_image = page.hero_image %}
+
+<!-- HERO -->
+<div class="hero is-home-height" style="background-image: url('{{ bg_image }}')"></div>
+
+<!-- SECTION -->
+<section class="py-4">
+	<div class="container">
+		<ul class="block-grid-xs-2">
+			{% for item in sitemap | offset: 1 %}
+			<li>
+				<a class="btn-card" href="{{ item[1].url }}">
+					{{ item[0] }} <i class="fa fa-angle-right"></i>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

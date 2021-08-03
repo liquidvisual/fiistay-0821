@@ -1,0 +1,191 @@
+/*
+    BUTTONS.CSS
+
+    - Last updated: 11.04.18
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// BOOTSTRAP OVERRIDE
+//-----------------------------------------------------------------
+
+// come on Bootstrap
+b, strong {
+    font-weight: $font-weight-bold;
+}
+
+//-----------------------------------------------------------------
+// BUTTON
+//-----------------------------------------------------------------
+
+.btn {
+    display: flex;
+    align-items: flex-end;
+    padding: rem-calc(12 15);
+    border-radius: 8px;
+    background: rgba(white, 0.18);
+    font-size: rem-calc(16);
+    line-height: 1.3;
+    font-weight: bold;
+    color: white;
+    text-transform: none !important;
+
+    .fa {
+        font-size: rem-calc(25);
+        margin-left: auto;
+        padding-left: rem-calc(20);
+    }
+
+    &.is-short {
+        padding: rem-calc(5 15);
+        min-width: rem-calc(274);
+    }
+
+    &:hover {
+        color: white;
+        background: rgba(white, 0.1);
+    }
+}
+
+//-----------------------------------------------------------------
+// BUTTON CARD (Home buttons)
+//-----------------------------------------------------------------
+
+.btn-card {
+    display: flex;
+    align-items: flex-end;
+    padding: rem-calc(10 15);
+    height: rem-calc(110);
+    border-radius: 8px;
+    background: rgba(white, 0.18);
+    font-size: rem-calc(23);
+    font-weight: 800;
+    line-height: 1.2;
+    color: white;
+    text-transform: none !important;
+
+    .fa {
+        font-size: rem-calc(25);
+        margin-left: auto;
+    }
+
+    &:hover {
+        color: white;
+        background: rgba(white, 0.1);
+    }
+}
+
+//-----------------------------------------------------------------
+// BUTTON CTA
+//-----------------------------------------------------------------
+
+.btn-cta {
+    display: flex;
+    align-items: center;
+    padding: rem-calc(15 15);
+    border-radius: 8px;
+    background: rgba(white, 0.18);
+    font-size: rem-calc(19);
+    line-height: 1.3;
+    font-weight: 800;
+    color: white;
+    text-transform: none !important;
+
+    .fa-map-marker {
+        font-size: rem-calc(44);
+    }
+
+    .fa-mobile {
+        font-size: rem-calc(38);
+    }
+
+    .fa-globe {
+        font-size: rem-calc(26);
+    }
+
+    .icon-left {
+        width: rem-calc(30);
+        margin-right: rem-calc(10);
+        text-align: center;
+        opacity: 0.4;
+    }
+
+    .icon-right {
+        padding-left: rem-calc(15);
+        margin-left: auto;
+        font-size: rem-calc(36);
+    }
+
+    &:hover {
+        color: white;
+        background: rgba(white, 0.1);
+    }
+}
+
+//-----------------------------------------------------------------
+// BUTTON TILE
+//-----------------------------------------------------------------
+
+.btn-tile {
+    position: relative;
+    display: block;
+    padding: rem-calc(15);
+    height: rem-calc(110);
+    border-radius: rem-calc(10);
+    font-size: rem-calc(18);
+    font-weight: 800;
+    line-height: 1.3;
+    color: white;
+    text-transform: none !important;
+    overflow: hidden;
+    z-index: 1;
+
+    .btn-tile-bg,
+    .btn-tile-tint,
+    .btn-tile-text {
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: rem-calc(10 15);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: transform 300ms ease;
+        will-change: transform;
+    }
+
+    .btn-tile-tint {
+        background: rgba(black, 0.1) linear-gradient(to top, rgba(black, 0.6) 30%, rgba(black, 0) 70%);
+    }
+
+    .badge {
+        position: absolute;
+        top: rem-calc(8);
+        right: rem-calc(8);
+        padding: rem-calc(4 7);
+        font-size: rem-calc(12);
+        font-weight: 800;
+        background-color: rgba(black, 0.67);
+        border-radius: rem-calc(7);
+    }
+
+    .fa {
+        font-size: rem-calc(27);
+        margin-left: auto;
+    }
+
+    &:hover {
+        color: white;
+
+        .btn-tile-bg {
+            transform: scale(1.10);
+        }
+    }
+}
+

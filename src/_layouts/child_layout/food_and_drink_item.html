@@ -1,0 +1,72 @@
+---
+layout: base__page
+---
+
+{% assign image = page.image  %}
+{% assign wysiwyg_1 = page.wysiwyg_1  %}
+{% assign distance = page.distance  %}
+
+<!-- IMAGE -->
+<section class="mb-4">
+	<img width="100%" src="{{ image }}" alt="Banner Image">
+</section>
+
+<!-- SECTION -->
+<section class="pb-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-9">
+
+				<!-- WYSIWYG #1 -->
+				<div class="wysiwyg">
+					<div class="lead">
+						{{ wysiwyg_1 }}
+					</div>
+				</div>
+
+			</div>
+			<div class="col-3 text-right mt-1">
+
+				<!-- DISTANCE -->
+				<span class="badge">{{ distance }}</span>
+
+			</div>
+		</div>
+
+		<!-- FEATURES -->
+		<div class="features mb-3">
+			{% for item in page.features %}
+				<span class="font-weight-bolder mr-3">
+					<i class="fa {% if item[1] %}fa-check{% else %}fa-close{% endif %}"></i> {{ item[0] }}
+				</span>
+			{% endfor %}
+		</div>
+
+		<!-- LINKS -->
+		<div class="mb-3">
+			<a class="btn-cta w-100" href="{{ page.links.address }}">
+				<i class="icon-left fa fa-map-marker"></i>
+				{{ page.links.address }}
+				<i class="icon-right fa fa-angle-right"></i>
+			</a>
+		</div>
+		<div class="mb-3">
+			<a class="btn-cta w-100" href="tel:{{ page.links.phone }}">
+				<i class="icon-left fa fa-mobile"></i>
+				{{ page.links.phone }}
+				<i class="icon-right fa fa-angle-right"></i>
+			</a>
+		</div>
+		<div class="mb-3">
+			<a class="btn-cta w-100" href="{{ page.links.website }}">
+				<i class="icon-left fa fa-globe"></i>
+				Website
+				<i class="icon-right fa fa-angle-right"></i>
+			</a>
+		</div>
+
+  	</div>
+</section>
+
+{% contentfor content_additional %}
+{% endcontentfor %}

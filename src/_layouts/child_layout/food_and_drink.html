@@ -1,0 +1,29 @@
+---
+layout: base__page
+---
+
+{% assign links = site.data.sitemap["Food & Drink"].children  %}
+
+<!-- SECTION -->
+<section class="py-4">
+    <div class="container">
+        <ul class="list-unstyled">
+            {% for item in links %}
+                <li class="mb-2">
+
+                    <!-- BUTTON TILE -->
+                    <a class="btn-tile" href="{{ item[1].url }}">
+                        <img width="100%" src="/assets/img/layout/thumb-sizer--320x94.svg" alt="{{ item[0] }}" />
+                        <span class="btn-tile-bg" style="background-image: url({{ item[1].image }})"></span>
+                        <span class="btn-tile-tint"></span>
+                        <span class="btn-tile-text">{{ item[0] }} <i class="fa fa-angle-right"></i></span>
+                        <span class="badge">{{ item[1].distance }}</span>
+                    </a>
+
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+{% contentfor content_additional %} {% endcontentfor %}

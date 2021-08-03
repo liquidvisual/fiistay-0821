@@ -1,0 +1,32 @@
+# GLOBAL SETTINGS
+cname: fiistay.yourwebvisual.com
+allow_robots: false
+
+# META
+title: Paradise Island Resort
+title_homepage: Fiistay - Paradise Island Resort
+company: Fiistay
+description:
+
+# DEVELOPER
+github_repo_owner: liquidvisual
+github_repo_path: https://github.com/liquidvisual/fiistay-0821
+github_repo_name: fiistay-0821
+jekyll_version: 3.8.5
+
+offices:
+  aus:
+    - city: All
+      phone: 555 555 555
+      fax: 444 444 444
+      email: admin@email.com.au
+
+# GOOGLE
+google_analytics: #UA-XXXXXXXX-X
+
+# AUTHOR
+author:
+  title:
+  url:
+  logo:
+  description:

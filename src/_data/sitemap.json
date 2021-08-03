@@ -1,0 +1,59 @@
+{
+    "Home": {
+        "url": "/",
+    },
+    "Weather": {
+        "url": "/food-and-drink/",
+    },
+    "Contact": {
+        "url": "/food-and-drink/",
+    },
+    "Emergency Details": {
+        "url": "/emergency-details/",
+    },
+    "Amenities": {
+        "url": "/amenities/",
+    },
+    "Food & Drink": {
+        "url": "/food-and-drink/",
+        "children_excluded_from_nav": false,
+        "children": {
+            "Taj Palace Indian Restaurant": {
+                "url": "/food-and-drink/food-and-drink-item/",
+                "image": "http://lorempixel.com/320/94/food/1",
+                "distance": "1.2km"
+            },
+            "Seascape Restaurant & Bar": {
+                "url": "/food-and-drink/food-and-drink-item/",
+                "image": "http://lorempixel.com/320/94/food/2",
+                "distance": "800m"
+            },
+            "The Cavill Hotel": {
+                "url": "/food-and-drink/food-and-drink-item/",
+                "image": "http://lorempixel.com/320/94/food/3",
+                "distance": "2.8km"
+            },
+            "Hurricane's Grill & Bar": {
+                "url": "/food-and-drink/food-and-drink-item/",
+                "image": "http://lorempixel.com/320/94/food/4",
+                "distance": "1.4km"
+            },
+            "Hunger Hunt Pizza Bar": {
+                "url": "/food-and-drink/food-and-drink-item/",
+                "image": "http://lorempixel.com/320/94/food/5",
+                "distance": "600m"
+            },
+            "Title Here": {
+                "url": "/food-and-drink/food-and-drink-item/",
+                "image": "http://lorempixel.com/320/94/food/6",
+                "distance": "900m"
+            },
+        }
+    },
+    "Things to Do": {
+        "url": "/food-and-drink/",
+    },
+    "Local Services": {
+        "url": "/services/",
+    }
+}
