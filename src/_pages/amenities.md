@@ -9,7 +9,7 @@ hero_image: /assets/img/content/backgrounds/mobile-bg-02.jpg
 
 ## Air Conditioning
 
-Apartments have reverse cycle air conditioning for your use. Please make sure that all windows and doors are closed for its effective use. Please also turn off when leaving the apartment for any length of time.
+Apartments have reverse cycle air conditioning for your use. Please make sure that all windows and doors are closed for its effective use. Please also turn off when leaving the apartment for any length of time. [link here](/)
 
 ---
 
@@ -17,7 +17,7 @@ Apartments have reverse cycle air conditioning for your use. Please make sure th
 
 Health Department regulations do not allow pets in the holiday apartments.
 
-<a class="btn is-short" href="#website">Link Button Example <i class="fa fa-angle-right"></i></a>
+<p><a class="btn-short" href="#website">Link Button Example</a></p>
 
 ---
 

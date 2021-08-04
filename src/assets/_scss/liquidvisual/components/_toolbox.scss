@@ -25,13 +25,13 @@ body {
 //-----------------------------------------------------------------
 
 ::-moz-selection {
-	background: lighten($primary, 10%);
+	background: var(--color-text-selection); //lighten($primary, 10%);
 	color: white;
 	text-shadow: none;
 }
 
 ::selection {
-	background: lighten($primary, 10%);
+	background: var(--color-text-selection); //lighten($primary, 10%);
 	color: white;
 	text-shadow: none;
 }

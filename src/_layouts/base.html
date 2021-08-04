@@ -15,19 +15,25 @@
     <!-- CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
     <!-- build:css({src,.tmp}) /assets/css/minified.css -->
     <link rel="stylesheet" href="/css/main.css">
     <!-- endbuild -->
 
+    <!-- THEME -->
     <style>
         :root {
-            --color-primary: #48c1bc; /* test */
+            --color-primary: #48c1bc;
+            --color-primary-dark: #1b7470;
+            --color-text-selection: #48c1bc;
+            --color-header-background-primary: rgba(255, 255, 255, 0.87);
+            --color-link-primary: #fff;
         }
 
-        body {
-            background: var(--color-primary);
+        /* Notes: generate gradients here at https://cssgradient.io */
+        .global-background {
+            background: linear-gradient(140deg, rgba(72,193,188,1) 0%, rgba(98,188,184,1) 41%, rgba(101,188,184,1) 74%, rgba(40,137,135,1) 100%);
         }
     </style>
 
@@ -36,6 +42,9 @@
     {% include components/layout/loader.html %}
 
     <div class="lv-page">
+
+        <!-- GRADIENT BG -->
+        <div class="global-background"></div>
 
         <!-- HEADER -->
         <header class="global-header">
@@ -66,17 +75,23 @@
     <!-- **** JAVASCRIPT **** -->
 
     <!-- build:js({src,.}) /assets/scripts/minified.js -->
+    <script src="/assets/scripts/main.js"></script>
+    <!-- endbuild -->
+
+    {% comment %}
+    <!-- build:js({src,.}) /assets/scripts/minified.js -->
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="/node_modules/bootstrap-validator/dist/validator.js"></script>
-    <script src="/node_modules/headroom.js/dist/headroom.js"></script>
     <script src="/node_modules/jquery.scrollTo/jquery.scrollTo.js"></script>
     <script src="/assets/scripts/liquidvisual/headroom.js"></script>
     <script src="/assets/scripts/liquidvisual/off-canvas.js"></script>
+    <script src="/assets/scripts/main.js"></script>
     <script src="/assets/scripts/liquidvisual/responsive-utility.js"></script>
     <script src="/assets/scripts/main.js"></script>
     <!-- endbuild -->
+    {% endcomment %}
 
     <!-- NO JAVASCRIPT WARNING -->
     <noscript>

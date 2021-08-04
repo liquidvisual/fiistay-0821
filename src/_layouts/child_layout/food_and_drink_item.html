@@ -34,7 +34,7 @@ layout: base__page
 		</div>
 
 		<!-- FEATURES -->
-		<div class="features mb-3">
+		<div class="features mt-1 mb-3">
 			{% for item in page.features %}
 				<span class="font-weight-bolder mr-3">
 					<i class="fa {% if item[1] %}fa-check{% else %}fa-close{% endif %}"></i> {{ item[0] }}
@@ -44,7 +44,7 @@ layout: base__page
 
 		<!-- LINKS -->
 		<div class="mb-3">
-			<a class="btn-cta w-100" href="{{ page.links.address }}">
+			<a class="btn-cta is-taller w-100" href="{{ page.links.address }}">
 				<i class="icon-left fa fa-map-marker"></i>
 				{{ page.links.address }}
 				<i class="icon-right fa fa-angle-right"></i>

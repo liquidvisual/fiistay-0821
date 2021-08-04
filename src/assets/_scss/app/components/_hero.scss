@@ -22,7 +22,8 @@
 	left: 0;
 	width: 100%;
 	height: calc(100% - 74px);
-	background: rgba($primary_dark, .84);
+	background-color: var(--color-primary-dark);
+	opacity: .84;
 	z-index: -1;
 }
 

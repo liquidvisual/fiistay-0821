@@ -99,12 +99,12 @@ $header-body-xxl-height: 304px !default; //324px !default;
 //-----------------------------------------------------------------
 
 .global-header {
-	position: fixed;
+	position: absolute; // fixed
 	top: 0;
 	width: 100%;
 	font-size: rem-calc(21);
 	font-weight: 600;
-	background: rgba(white, 0.87);
+	background: var(--color-header-background-primary);
 	will-change: transform;
 	// z-index: 9999;
 	z-index: 200;
@@ -235,8 +235,8 @@ $header-body-xxl-height: 304px !default; //324px !default;
 
 		@include media-breakpoint-up(md) {
 		    // max-height: rem-calc(100); // [LOCKED] - default size
-		    width: rem-calc(331);
-		    max-height: none;
+		    // width: rem-calc(331);
+		    // max-height: none;
 		}
 	}
 }

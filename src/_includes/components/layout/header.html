@@ -7,10 +7,8 @@
 
         <!-- LOGO -->
         <a class="logo" href="/" title="{{ settings.title_homepage }}" itemprop="url">
-            <!-- <img src="{{ logo }}" alt="{{ settings.company }}" itemprop="logo"> -->
-            <span class="text-uppercase font-weight-bold">
-                {{ settings.title }}
-            </span>
+            <!-- Note: Images should be served double scale and the width set to half. -->
+            <img width="252" src="{{ logo }}" alt="{{ settings.company }}" itemprop="logo">
         </a>
 
         {% comment %}

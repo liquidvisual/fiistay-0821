@@ -86,7 +86,7 @@ $font-family-serif: inherit !default;
 	p.lead,
 	.lead > p {
 		margin-bottom: rem-calc(20);
-		font-size: rem-calc(18);
+		font-size: rem-calc(17);
 	}
 
 	// contact item one off
@@ -109,6 +109,14 @@ $font-family-serif: inherit !default;
 
 	hr {
 		border-color: rgba(white, 0.2);
+	}
+
+	a {
+		color: var(--color-link-primary);
+
+		&:hover {
+			opacity: 0.9;
+		}
 	}
 
 	// LISTS
@@ -151,7 +159,7 @@ p.lead,
 // PHONE LINK
 //=========================================
 
-.wysiwyg .phone-link {
+.phone-link {
 	display: inline-flex;
 	align-items: center;
 	font-size: rem-calc(17);
@@ -164,5 +172,10 @@ p.lead,
 		font-size: rem-calc(30);
 		font-family: "FontAwesome";
 		line-height: 0;
+	}
+
+	&:hover {
+		color: $body-color;
+		opacity: 0.8;
 	}
 }
