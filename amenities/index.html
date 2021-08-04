@@ -9,16 +9,22 @@
     <!-- CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/minified.css">
+
+    <!-- THEME -->
     <style>
     :root {
         --color-primary: #48c1bc;
-        /* test */
+        --color-primary-dark: #1b7470;
+        --color-text-selection: #48c1bc;
+        --color-header-background-primary: rgba(255, 255, 255, 0.87);
+        --color-link-primary: #fff;
     }
+    /* Notes: generate gradients here at https://cssgradient.io */
     
-    body {
-        background: var(--color-primary);
+    .global-background {
+        background: linear-gradient(140deg, rgba(72, 193, 188, 1) 0%, rgba(98, 188, 184, 1) 41%, rgba(101, 188, 184, 1) 74%, rgba(40, 137, 135, 1) 100%);
     }
     </style>
 </head>
@@ -55,6 +61,9 @@
     </script>
     <div class="lv-page">
 
+        <!-- GRADIENT BG -->
+        <div class="global-background"></div>
+
         <!-- HEADER -->
         <header class="global-header">
 
@@ -65,8 +74,8 @@
                     <!-- LOGO -->
                     <a class="logo" href="/" title="Fiistay - Paradise Island Resort" itemprop="url">
 
-                        <!-- <img src="/assets/img/content/logo@2x.png" alt="Fiistay" itemprop="logo"> -->
-                        <span class="text-uppercase font-weight-bold">Paradise Island Resort</span>
+                        <!-- Note: Images should be served double scale and the width set to half. -->
+                        <img width="252" src="/assets/img/content/logo@2x.png" alt="Fiistay" itemprop="logo">
                     </a>
                 </div>
             </div>
@@ -97,14 +106,14 @@
                 <div class="wysiwyg mb-4">
                     <div class="container">
                         <h2 id="air-conditioning">Air Conditioning</h2>
-                        <p>Apartments have reverse cycle air conditioning for your use. Please make sure that all windows and doors are closed for its effective use. Please also turn off when leaving the apartment for any length of time.</p>
+                        <p>Apartments have reverse cycle air conditioning for your use. Please make sure that all windows and doors are closed for its effective use. Please also turn off when leaving the apartment for any length of time.
+                            <a href="/">link here</a>
+                        </p>
                         <hr>
                         <h2 id="animals">Animals</h2>
                         <p>Health Department regulations do not allow pets in the holiday apartments.</p>
                         <p>
-                            <a class="btn is-short" href="#website">Link Button Example
-                                <i class="fa fa-angle-right"></i>
-                            </a>
+                            <a class="btn-short" href="#website">Link Button Example</a>
                         </p>
                         <hr>
                         <h2 id="beach">Beach</h2>

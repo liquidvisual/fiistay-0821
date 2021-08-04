@@ -9,16 +9,22 @@
     <!-- CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/minified.css">
+
+    <!-- THEME -->
     <style>
     :root {
         --color-primary: #48c1bc;
-        /* test */
+        --color-primary-dark: #1b7470;
+        --color-text-selection: #48c1bc;
+        --color-header-background-primary: rgba(255, 255, 255, 0.87);
+        --color-link-primary: #fff;
     }
+    /* Notes: generate gradients here at https://cssgradient.io */
     
-    body {
-        background: var(--color-primary);
+    .global-background {
+        background: linear-gradient(140deg, rgba(72, 193, 188, 1) 0%, rgba(98, 188, 184, 1) 41%, rgba(101, 188, 184, 1) 74%, rgba(40, 137, 135, 1) 100%);
     }
     </style>
 </head>
@@ -55,6 +61,9 @@
     </script>
     <div class="lv-page">
 
+        <!-- GRADIENT BG -->
+        <div class="global-background"></div>
+
         <!-- HEADER -->
         <header class="global-header">
 
@@ -65,8 +74,8 @@
                     <!-- LOGO -->
                     <a class="logo" href="/" title="Fiistay - Paradise Island Resort" itemprop="url">
 
-                        <!-- <img src="/assets/img/content/logo@2x.png" alt="Fiistay" itemprop="logo"> -->
-                        <span class="text-uppercase font-weight-bold">Paradise Island Resort</span>
+                        <!-- Note: Images should be served double scale and the width set to half. -->
+                        <img width="252" src="/assets/img/content/logo@2x.png" alt="Fiistay" itemprop="logo">
                     </a>
                 </div>
             </div>
@@ -98,42 +107,40 @@
                     <div class="container">
                         <h2 id="ambulance">Ambulance</h2>
                         <p>
-                            <a class="btn is-short w-100" href="tel:131233">13 12 133
-                                <i class="fa fa-angle-right"></i>
-                            </a>
+                            <a class="btn-short" href="tel:131233">13 12 133</a>
                         </p>
-                        <hr>
+                        <p class="btn-short">
+                            <a href="#">Button with class on paragraph</a>
+                        </p>
+
+                        <!-- Note: For type specific spacing like this, you'll need to specify it in the template. -->
+                        <div class="spacer my-3"></div>
                         <h2 id="police">Police</h2>
                         <p>
-                            <a class="btn is-short" href="tel:000">Emergency: 000
-                                <i class="fa fa-angle-right"></i>
-                            </a>
+                            <a class="btn-short" href="tel:000">Emergency: 000</a>
                         </p>
                         <p>
-                            <a class="btn is-short" href="tel:131444">Non-Emergency: 13 14 44
-                                <i class="fa fa-angle-right"></i>
-                            </a>
+                            <a class="btn-short" href="tel:131444">Non-Emergency: 13 14 44</a>
                         </p>
-                        <hr>
+                        <p>
+                            <a class="btn-short" href="#website">Link Button Example</a>
+                        </p>
+                        <div class="spacer my-3"></div>
                         <h2 id="hospital">Hospital</h2>
+                        <div class="spacer my-2"></div>
                         <h3 id="gold-coast-hospital">Gold Coast Hospital</h3>
                         <p>1 Hospital Blvd, Southport QLD 4215
-                            <br>Open 24 Hours including Emergency Department.
+                            <br>Open 24 Hours including Emergency
+                            <br>Department.
                             <br>Emergency Facilities Available</p>
                         <p>
-                            <a class="btn is-short" href="tel:1300744284">1300 744 284
-                                <i class="fa fa-angle-right"></i>
-                            </a>
+                            <a class="btn-short" href="tel:1300744284">1300 744 284</a>
                         </p>
                         <p>
-                            <a class="btn is-short" href="#directions">Directions
-                                <i class="fa fa-angle-right"></i>
-                            </a>
+                            <a class="btn-short" href="#directions">Directions</a>
                         </p>
                         <p>
-                            <a class="btn is-short" href="#website">Website
-                                <i class="fa fa-angle-right"></i>
-                            </a>
+                            <a class="btn-short" href="#website">Website</a>
                         </p>
                     </div>
                 </div>
