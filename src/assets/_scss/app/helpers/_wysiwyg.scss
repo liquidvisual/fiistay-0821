@@ -83,13 +83,13 @@ $font-family-serif: inherit !default;
 
 	h1:not(:first-of-type),
 	h2:not(:first-of-type) {
-		margin-top: rem-calc(42);
+		margin-top: rem-calc(32);
 	}
 
-	hr + h1:not(:first-of-type),
-	hr + h2:not(:first-of-type) {
-		margin-top: rem-calc(20);
-	}
+	// hr + h1:not(:first-of-type),
+	// hr + h2:not(:first-of-type) {
+		// margin-top: rem-calc(32);
+	// }
 
 	// LEAD
 	.lead,
