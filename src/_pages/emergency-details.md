@@ -10,11 +10,7 @@ hero_image: /assets/img/content/backgrounds/mobile-bg-02.jpg
 ## Ambulance
 
 <p><a class="btn-short" href="tel:131233">13 12 133</a></p>
-
 <p class="btn-short"><a href="#">Button with class on paragraph</a></p>
-
-<!-- Note: For type specific spacing like this, you'll need to specify it in the template. -->
-<div class="spacer my-3"></div>
 
 ## Police
 
@@ -22,11 +18,7 @@ hero_image: /assets/img/content/backgrounds/mobile-bg-02.jpg
 <p><a class="btn-short" href="tel:131444">Non-Emergency: 13 14 44</a></p>
 <p><a class="btn-short" href="#website">Link Button Example</a></p>
 
-<div class="spacer my-3"></div>
-
 ## Hospital
-
-<div class="spacer my-2"></div>
 
 ### Gold Coast Hospital
 1 Hospital Blvd, Southport QLD 4215<br>
