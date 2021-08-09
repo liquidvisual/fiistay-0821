@@ -75,16 +75,18 @@ $font-family-serif: inherit !default;
 		// @extend .text-dark;
 	}
 
-	h1 { font-size: rem-calc(38); }
+	h1 { font-size: rem-calc(22); } // 38
 	h2 { font-size: rem-calc(22); }
 	h3 { font-size: rem-calc(17); }
 	h4 { font-size: rem-calc(16); }
 	h5, h6 { font-size: rem-calc(16); }
 
+	h1:not(:first-of-type),
 	h2:not(:first-of-type) {
 		margin-top: rem-calc(42);
 	}
 
+	hr + h1:not(:first-of-type),
 	hr + h2:not(:first-of-type) {
 		margin-top: rem-calc(20);
 	}

@@ -7,6 +7,7 @@ breadcrumb_url: /
 hero_image: /assets/img/content/backgrounds/mobile-bg-02.jpg
 ---
 
+# This is an H1 heading
 ## This is an H2 heading
 ### This is an H3 heading
 #### This is an H4 heading
