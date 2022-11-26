@@ -2,6 +2,11 @@
   "name": "fiistay-0821",
   "private": true,
   "version": "0.1.0",
+  "scripts": {
+    "serve": "grunt serve",
+    "build": "grunt build",
+    "deploy": "grunt deploy"
+  },
   "devDependencies": {
     "autoprefixer": "^7.2.6",
     "babel-core": "^6.26.0",

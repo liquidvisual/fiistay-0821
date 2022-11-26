@@ -99,7 +99,7 @@ module.exports = function (grunt) {
           // Open the site in Chrome & Firefox
           // browser: ["google chrome", "firefox"]
           browser: ["google chrome"],
-          open: false,
+          open: true,
           port: "<%= yeoman.port %>",
           host: "0.0.0.0",
           server: {
@@ -305,10 +305,7 @@ module.exports = function (grunt) {
       options: {
         dest: "<%= yeoman.dist %>",
       },
-      html: [
-        "<%= yeoman.dist %>/index.html",
-        "<%= yeoman.dist %>/manage/index.html",
-      ],
+      html: ["<%= yeoman.dist %>/index.html", "<%= yeoman.dist %>/manage/index.html"],
     },
     usemin: {
       options: {
@@ -331,8 +328,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          "<%= yeoman.assets %>/scripts/minified.js":
-            "<%= yeoman.assets %>/scripts/minified.js",
+          "<%= yeoman.assets %>/scripts/minified.js": "<%= yeoman.assets %>/scripts/minified.js",
         },
       },
     },
@@ -484,8 +480,7 @@ module.exports = function (grunt) {
         commit: true,
         connectCommits: false,
         push: true,
-        message:
-          "Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%",
+        message: "Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%",
       },
       master: {
         options: {
@@ -593,9 +588,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask("server", function () {
-    grunt.log.warn(
-      "The `server` task has been deprecated. Use `grunt serve` to start a server."
-    );
+    grunt.log.warn("The `server` task has been deprecated. Use `grunt serve` to start a server.");
     grunt.task.run(["serve"]);
   });
 
